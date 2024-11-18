@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0c0c;
+  color: #fff;
+}
+
+.inputBox {
+  width: 100%;
+  background-color: #141414;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btnBlue {
+  background-color: #00aeef;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btnBlue:hover {
+  background-color: #0086b3;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lightMode {
+  background-color: #fff;
+  color: #000;
+}
+.lightMode .EditorNavbar {
+  background-color: #fff;
+  color: #000;
+}
+.lightMode .tab-header {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+.lightMode .tab {
+  background-color: #c2c1c1;
+  color: #000;
+}
