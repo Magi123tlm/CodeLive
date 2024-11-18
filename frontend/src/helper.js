@@ -10,4 +10,4 @@ export const removeClass = (element, className) => {
 
 // export const apiBasedUrl = "http://localhost:8000";
 
-export const apiBasedUrl = "https://code-live-chi.vercel.app/";
+export const apiBasedUrl = "https://code-live-seven.vercel.app/";
