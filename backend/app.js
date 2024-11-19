@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     origin: "https://code-live-eta.vercel.app",
-    methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
+    // methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
   })
 );
 app.options("*", cors()); // Enable preflight for all routes
