@@ -14,6 +14,8 @@ app.use(
   })
 );
 
+app.options("*", cors()); // Enable preflight for all routes
+
 dotenv.config();
 
 mongoose
