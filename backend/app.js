@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     origin: "https://code-live-eta.vercel.app",
-    methods: ["GET", "POST", "DELETE", "PUT"],
+    methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
     credentials: true,
   })
 );
