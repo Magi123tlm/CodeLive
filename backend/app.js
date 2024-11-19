@@ -6,7 +6,13 @@ const routes = require("./routes/index.js");
 const dotenv = require("dotenv");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://code-live-eta.vercel.app",
+    methods: ["GET", "POST", "DELETE", "PUT"],
+    credentials: true,
+  })
+);
 
 dotenv.config();
 
