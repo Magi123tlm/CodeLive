@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import image from "../assets/authPageSide.png";
 import { Link, useNavigate } from "react-router-dom";
-import { apiBasedUrl } from "../helper";
+import { apiBasedUrl } from "../helper.js";
 
 const Login = () => {
   const [email, setEmail] = useState("");
