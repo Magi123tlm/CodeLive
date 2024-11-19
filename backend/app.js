@@ -19,7 +19,7 @@ dotenv.config();
 mongoose
   .connect(process.env.URI)
   .then(() => {
-    app.listen(process.env.PORT || 3000, (err) => {
+    app.listen(process.env.PORT, (err) => {
       if (err) {
         console.error(err);
       }
