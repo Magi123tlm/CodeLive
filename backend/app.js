@@ -4,21 +4,16 @@ const mongoose = require("mongoose");
 const app = express();
 const routes = require("./routes/index.js");
 const dotenv = require("dotenv");
+dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(
-//   cors({
-//     origin: "https://code-live-eta.vercel.app",
-//     methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
-//     credentials: true,
-//   })
-// );
-
-// app.options("*", cors()); // Enable preflight for all routes
-
-app.use(cors());
-
-dotenv.config();
+app.use(
+  cors({
+    origin: "https://code-live-eta.vercel.app",
+    methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
+  })
+);
+app.options("*", cors()); // Enable preflight for all routes
 
 mongoose
   .connect(process.env.URI)
