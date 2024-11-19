@@ -6,15 +6,17 @@ const routes = require("./routes/index.js");
 const dotenv = require("dotenv");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(
-  cors({
-    origin: "https://code-live-eta.vercel.app",
-    methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: "https://code-live-eta.vercel.app",
+//     methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
+//     credentials: true,
+//   })
+// );
 
-app.options("*", cors()); // Enable preflight for all routes
+// app.options("*", cors()); // Enable preflight for all routes
+
+app.use(cors());
 
 dotenv.config();
 

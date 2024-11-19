@@ -22,7 +22,7 @@ router.post("/signUp", async (req, res) => {
       });
     });
   }
-  res.json({ success: true, message: "User created successfully" });
+  res.status(201).json({ success: true, message: "User created successfully" });
 });
 
 router.post("/login", async (req, res) => {
@@ -33,7 +33,8 @@ router.post("/login", async (req, res) => {
       if (resp) {
         let token = jwt.sign(
           { email: user.email, userId: user._id },
-          process.env.SECRET
+          process.env.SECRET,
+          { expiresIn: "1h" }
         );
         res.status(200).json({
           success: true,
@@ -43,7 +44,7 @@ router.post("/login", async (req, res) => {
         });
       } else {
         res
-          .status(422)
+          .status(404)
           .json({ success: false, message: "Invalid email or password" });
       }
     });
