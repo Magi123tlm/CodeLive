@@ -42,11 +42,13 @@ router.post("/login", async (req, res) => {
           userId: user._id,
         });
       } else {
-        res.json({ success: false, message: "Invalid email or password" });
+        res
+          .status(422)
+          .json({ success: false, message: "Invalid email or password" });
       }
     });
   } else {
-    res.json({ success: false, message: "User Does Not Exist" });
+    res.status(422).json({ success: false, message: "User Does Not Exist" });
   }
 });
 
