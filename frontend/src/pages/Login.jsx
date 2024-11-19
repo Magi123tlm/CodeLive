@@ -15,6 +15,7 @@ const Login = () => {
     fetch(apiBasedUrl + "/login", {
       mode: "cors",
       method: "POST",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
