@@ -7,7 +7,7 @@ const EditorNavbar = () => {
   return (
     <div className="EditorNavbar flex items-center justify-between px-[100px] h-[80px] bg-[#141414]">
       <div className="logo">
-        <img className="w-[150px] cursor-pointer" src={logo} alt="" />
+        <img className="w-[100px] cursor-pointer" src={logo} alt="" />
       </div>
       <p>
         File/ <span className="text-[gray]">MyProject</span>
