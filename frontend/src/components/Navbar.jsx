@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import Avatar from "react-avatar";
 import { MdLightMode } from "react-icons/md";
