@@ -40,7 +40,7 @@ const Login = () => {
     <>
       <div className=" w-full min-h-screen flex items-center justify-between pl-[100px]">
         <div className="left w-[35%]">
-          <img className="w-[200px]" src={logo} alt="logo image" />
+          <img className="w-[150px]" src={logo} alt="logo image" />
           <form onSubmit={submitForm} action="" className="w-full mt-[60px]">
             <div className="inputBox">
               <input
